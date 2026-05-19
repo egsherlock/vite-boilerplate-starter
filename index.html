@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Vite Boilerplate — BlazingOwl</title>
+		<meta
+			name="description"
+			content="Vite + React 19 + TypeScript + Tailwind v4 + TanStack + shadcn/ui boilerplate for studio and agency front-end work."
+		/>
+
+		<!-- Favicons -->
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<link rel="manifest" href="/site.webmanifest" />
+
+		<!-- Theme colour switches with light/dark UA preference -->
+		<meta name="theme-color" content="#f7f6f2" media="(prefers-color-scheme: light)" />
+		<meta name="theme-color" content="#111110" media="(prefers-color-scheme: dark)" />
+
+		<!-- Fonts (swap per client; landing reference uses Inter + DM Mono) -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Inter:wght@300..700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- Prevent flash of wrong theme before React mounts -->
+		<script>
+			;(function () {
+				try {
+					var stored = localStorage.getItem('vbs.theme')
+					var theme =
+						stored === 'light' || stored === 'dark'
+							? stored
+							: window.matchMedia('(prefers-color-scheme: dark)').matches
+								? 'dark'
+								: 'light'
+					document.documentElement.setAttribute('data-theme', theme)
+					document.documentElement.style.colorScheme = theme
+				} catch (_) {
+					document.documentElement.setAttribute('data-theme', 'dark')
+				}
+			})()
+		</script>
+	</head>
+	<body>
+		<div id="root"></div>
+		<script type="module" src="/src/main.tsx"></script>
+	</body>
+</html>
