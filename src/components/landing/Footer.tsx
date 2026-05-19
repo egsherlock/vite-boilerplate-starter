@@ -8,10 +8,12 @@ export function Footer() {
 				<BrandLockup href={SITE.blazingOwl} variant="footer" />
 				<div className="footer-meta">
 					<span className="footer-text">v1.0.0 — May 2026</span>
-					<p className="footer-studio">
-						Need a team to ship it?{' '}
-						<a href={SITE.blazingOwl}>Work with BlazingOwl</a>
-					</p>
+					<div className="footer-studio">
+						<p className="footer-studio-lead">Need a team to ship your idea?</p>
+						<a className="footer-studio-cta" href={SITE.blazingOwl}>
+							Work with BlazingOwl
+						</a>
+					</div>
 				</div>
 			</div>
 			<nav className="footer-links" aria-label="Footer">

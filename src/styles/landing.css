@@ -751,17 +751,23 @@
 	color: var(--color-text-faint);
 }
 .footer-studio {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+}
+.footer-studio-lead {
 	margin: 0;
 	font-size: 0.8125rem;
 	color: var(--color-text-faint);
 	line-height: 1.45;
 }
-.footer-studio a {
+.footer-studio-cta {
+	font-size: 0.8125rem;
 	color: var(--color-text-muted);
 	text-decoration: none;
 	transition: color var(--duration-interactive) var(--ease-interactive);
 }
-.footer-studio a:hover {
+.footer-studio-cta:hover {
 	color: var(--color-text);
 }
 .footer-links {
