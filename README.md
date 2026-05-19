@@ -1,6 +1,8 @@
 # Vite Boilerplate Starter
 
-A production-grade GitHub-template repo for studio and agency front-end work, by **BlazingOwl**. Every client project starts here — clone, install, and start building features.
+A production-grade GitHub-template repo for studio and agency front-end work, by **[BlazingOwl](https://blazingowl.co.uk)**. Every client project starts here — clone, install, and start building features.
+
+**Live preview:** [vite-starter.blazingowl.dev](https://vite-starter.blazingowl.dev)
 
 ```
 Vite 6 · React 19 · TypeScript 5 · Tailwind v4 · TanStack Router/Query
@@ -136,8 +138,9 @@ Components are copied directly into `src/components/ui/` — you own them and ca
 
 ## Branding (BlazingOwl)
 
+- External links (studio site, GitHub repo, live demo) live in [src/config/site.ts](src/config/site.ts) — update or remove when forking for a client.
 - Wordmark is inlined as a typed React component in [src/components/brand/Wordmark.tsx](src/components/brand/Wordmark.tsx) — no separate SVG file is imported at runtime. It uses `currentColor` + `var(--color-text-muted)` so it adapts to both themes while preserving the original two-tone treatment.
-- [src/components/brand/BrandLockup.tsx](src/components/brand/BrandLockup.tsx) composes the wordmark with a "Vite Boilerplate" product label. Variants: `header` (compact) and `footer` (larger).
+- [src/components/brand/BrandLockup.tsx](src/components/brand/BrandLockup.tsx) composes the wordmark with a "Vite Boilerplate" product label. Variants: `header` (compact) and `footer` (larger). On the public template, the lockup links to [blazingowl.co.uk](https://blazingowl.co.uk).
 - Favicon set lives in [public/](public/) and is wired up in [index.html](index.html).
 
 ---
