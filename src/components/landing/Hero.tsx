@@ -1,5 +1,6 @@
 import { motion } from 'motion/react'
 import { ArrowRight, Play } from 'lucide-react'
+import { OwlFace } from '@/components/brand/OwlFace'
 import { usePrefersReducedMotion } from '@/hooks/use-prefers-reduced-motion'
 
 interface Stat {
@@ -70,21 +71,35 @@ export function Hero() {
 					</a>
 				</motion.div>
 
-				<div className="stats">
-					{STATS.map((stat, i) => (
-						<motion.div
-							key={stat.label}
-							{...enter}
-							transition={{
-								duration: 0.55,
-								ease: easeOut,
-								delay: 0.46 + i * 0.07,
-							}}
-						>
-							<div className="stat-num">{stat.num}</div>
-							<div className="stat-label">{stat.label}</div>
-						</motion.div>
-					))}
+				<div className="hero-stats">
+					<motion.figure
+						className="hero-owl-peek"
+						aria-hidden="true"
+						initial={prefersReduced ? false : { opacity: 0 }}
+						animate={{ opacity: 1 }}
+						transition={{ duration: 0.7, ease: easeOut, delay: 0.44 }}
+					>
+						<div className="hero-owl-clip">
+							<OwlFace />
+						</div>
+					</motion.figure>
+
+					<div className="stats">
+						{STATS.map((stat, i) => (
+							<motion.div
+								key={stat.label}
+								{...enter}
+								transition={{
+									duration: 0.55,
+									ease: easeOut,
+									delay: 0.46 + i * 0.07,
+								}}
+							>
+								<div className="stat-num">{stat.num}</div>
+								<div className="stat-label">{stat.label}</div>
+							</motion.div>
+						))}
+					</div>
 				</div>
 			</div>
 		</section>
