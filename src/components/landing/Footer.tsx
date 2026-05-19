@@ -11,7 +11,11 @@ export function Footer() {
 				<a href="#stack">Stack</a>
 				<a href="#features">Features</a>
 				<a href="#quickstart">Quick Start</a>
-				<a href="https://github.com" target="_blank" rel="noopener noreferrer">
+				<a
+					href="https://github.com/egsherlock/vite-boilerplate-starter"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
 					GitHub
 				</a>
 			</nav>

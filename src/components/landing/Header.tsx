@@ -14,7 +14,7 @@ export function Header() {
 					<span>Quick Start</span>
 				</a>
 				<a
-					href="https://github.com"
+					href="https://github.com/egsherlock/vite-boilerplate-starter"
 					target="_blank"
 					rel="noopener noreferrer"
 					className="btn-outline"
