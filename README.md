@@ -1,6 +1,6 @@
 # Vite Boilerplate Starter
 
-A production-grade GitHub-template repo for studio and agency front-end work, by **[BlazingOwl](https://blazingowl.co.uk)**. Every client project starts here — clone, install, and start building features.
+A production-grade GitHub-template repo for studio and agency front-end work, by **[BlazingOwl](https://blazingowl.co.uk)**. Most front-end client projects start here — clone, install, and begin building features.
 
 **Live preview:** [vite-starter.blazingowl.dev](https://vite-starter.blazingowl.dev)
 
